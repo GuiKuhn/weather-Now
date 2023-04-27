@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkslateblue;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.app .mainDay {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  width: 940px;
+  height: 227px;
+  margin: 0px 0px 16px 0px;
+}
+.app .mainDay .leftRow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.app .mainDay .leftRow .maxMin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 25px;
+}
+.app .mainDay .leftRow .maxMin .maxMainDegree {
+  color: #C87C22;
+}
+.app .mainDay .leftRow .maxMin .minMainDegree {
+  color: #004C6D;
+}
+.app .mainDay .leftRow .mainDegree {
+  font-size: 100px;
+}
+.app .mainDay .middleRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app .mainDay .middleRow .diaMain {
+  font-size: 25px;
+}
+.app .mainDay .middleRow .city {
+  font-size: 20px;
+}
+.app .mainDay .middleRow .hours {
+  font-size: 120px;
+}
+.app .mainDay .rightRow {
+  width: 157px;
+  height: 157px;
+}
+.app .weatherGadgets {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.app .weatherGadgets .gadget1, .app .weatherGadgets .gadget2, .app .weatherGadgets .gadget3, .app .weatherGadgets .gadget4 {
+  margin: 15px 8px 23px 8px;
+  padding: 16px 40px 16px 40px;
+  background-color: white;
+}
+.app .weatherGadgets .gadget1 .gadgetIcon, .app .weatherGadgets .gadget2 .gadgetIcon, .app .weatherGadgets .gadget3 .gadgetIcon, .app .weatherGadgets .gadget4 .gadgetIcon {
+  width: 55px;
+  height: auto;
+}
+.app .dayCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  width: 669px;
+  height: 115px;
+  margin: 8px 0px 8px 0px;
+  padding: 14px 35px 14px 35px;
+}
+.app .dayCard .dateAndDegrees {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app .dayCard .dateAndDegrees .date {
+  font-size: 20px;
+}
+.app .dayCard .dateAndDegrees .maxAndMin {
+  display: flex;
+  flex-direction: row;
+  font-size: 60px;
+}
+.app .dayCard .precipitation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app .dayCard .precipitation .percent {
+  font-size: 20px;
+}
+.app .dayCard .precipitation .precipitationIcon {
+  width: 33px;
+  height: auto;
+}
+.app .dayCard .weatherIcon {
+  width: 87px;
+  height: auto;
+}/*# sourceMappingURL=style.css.map */

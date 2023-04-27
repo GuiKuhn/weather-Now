@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding: 0;
+    //box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkslateblue;
+}
+.app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .mainDay{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        width: 940px;
+        height: 227px;
+        margin: 0px 0px 16px 0px;
+        .leftRow{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .maxMin{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                font-size: 25px;
+                .maxMainDegree{
+                    color: #C87C22;
+                }
+                .minMainDegree{
+                    color: #004C6D;
+                }
+            }
+            .mainDegree{
+                font-size: 100px;
+            }
+        }
+        .middleRow{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .diaMain{
+                font-size: 25px;
+            }
+            .city{
+                font-size: 20px;
+            }
+            .hours{
+                font-size: 120px;
+            }
+        }
+        .rightRow{
+            width: 157px;
+            height: 157px;
+        }   
+    }
+    .weatherGadgets{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .gadget1,.gadget2,.gadget3,.gadget4{
+            margin: 15px 8px 23px 8px;
+            padding: 16px 40px 16px 40px;
+            background-color: white;
+            .gadgetIcon{
+                width: 55px;
+                height: auto;
+            }
+        }
+    }
+    .dayCard{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        width: 669px;
+        height: 115px;
+        margin: 8px 0px 8px 0px;
+        padding: 14px 35px 14px 35px;
+        .dateAndDegrees{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .date{
+                font-size: 20px;
+            }
+            .maxAndMin{
+                display: flex;
+                flex-direction: row;
+                font-size: 60px;
+            }
+        }
+        .precipitation{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .percent{
+                font-size: 20px;
+            }
+            .precipitationIcon{
+                width: 33px;
+                height: auto;
+            }
+        }
+        .weatherIcon{
+            width: 87px;
+            height: auto;
+        }
+    }
+}
+
