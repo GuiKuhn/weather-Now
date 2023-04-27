@@ -9,8 +9,11 @@ body {
   justify-content: center;
   align-items: center;
   background-image: url("../images/Dia-ensolarado.jpg");
+  background-size: cover;
   width: 1920;
   height: 1080;
+  transform: scale(0.67);
+
 }
 
 .app {
@@ -18,6 +21,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: -700px;
 }
 .app .mainDay {
   display: flex;
