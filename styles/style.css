@@ -31,6 +31,7 @@ body {
   height: 227px;
   margin: 0px 0px 16px 0px;
   border-radius: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .app .mainDay .leftRow {
   display: flex;
@@ -81,6 +82,7 @@ body {
   margin: 15px 8px 23px 8px;
   padding: 16px 40px 16px 40px;
   background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
 }
 .app .weatherGadgets .gadget1 .gadgetIcon, .app .weatherGadgets .gadget2 .gadgetIcon, .app .weatherGadgets .gadget3 .gadgetIcon, .app .weatherGadgets .gadget4 .gadgetIcon {
@@ -93,6 +95,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 669px;
   height: 115px;
   margin: 8px 0px 8px 0px;
