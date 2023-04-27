@@ -46,7 +46,7 @@ function showDate(){
       writtenDay = 'Sábado'
     }
   
-    var wholeText = writtenDay + ', ' + day + ' de ' + month +'.'
+    var wholeText = writtenDay + ', ' + day + ' de ' + month;
   
     document.getElementById("date").innerText = wholeText;
     document.getElementById("date").textContent = wholeText;
