@@ -13,12 +13,14 @@ body{
     background-image: url("../images/Dia-ensolarado.jpg");
     width: 1920;
     height: 1080;
+    transform: scale(0.67);
 }
 .app{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: -700px;
     .mainDay{
         display:flex;
         flex-direction: row;
