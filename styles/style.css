@@ -8,7 +8,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/Dia-ensolarado.jpg");
+  background-color: darkslateblue;
+  width: 1920;
+  height: 1080;
 }
 
 .app {
