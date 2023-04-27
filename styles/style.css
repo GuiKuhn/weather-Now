@@ -106,19 +106,25 @@ body {
   flex-direction: row;
   font-size: 60px;
 }
-.app .dayCard .precipitation {
+.app .dayCard .precipitationAndWIcon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.app .dayCard .precipitationAndWIcon .precipitation {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.app .dayCard .precipitation .percent {
+.app .dayCard .precipitationAndWIcon .precipitation .percent {
   font-size: 20px;
 }
-.app .dayCard .precipitation .precipitationIcon {
+.app .dayCard .precipitationAndWIcon .precipitation .precipitationIcon {
   width: 33px;
   height: auto;
 }
-.app .dayCard .weatherIcon {
+.app .dayCard .precipitationAndWIcon .weatherIcon {
   width: 87px;
   height: auto;
+  flex: 1;
 }/*# sourceMappingURL=style.css.map */
