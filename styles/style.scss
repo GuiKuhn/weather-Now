@@ -1,7 +1,10 @@
+$mainColor: rgba(255, 255, 255, 0.6);
+
 *{
     margin:0;
     padding: 0;
     //box-sizing: border-box;
+    font-family: "Inter", sans-serif;
 }
 body{
     display: flex;
@@ -19,10 +22,11 @@ body{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        background-color: white;
+        background-color: $mainColor;
         width: 940px;
         height: 227px;
         margin: 0px 0px 16px 0px;
+        border-radius: 20px;
         .leftRow{
             display: flex;
             flex-direction: column;
@@ -69,7 +73,8 @@ body{
         .gadget1,.gadget2,.gadget3,.gadget4{
             margin: 15px 8px 23px 8px;
             padding: 16px 40px 16px 40px;
-            background-color: white;
+            background-color: $mainColor;
+            border-radius: 50px;
             .gadgetIcon{
                 width: 55px;
                 height: auto;
@@ -81,11 +86,12 @@ body{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        background-color: white;
+        background-color: $mainColor;
         width: 669px;
         height: 115px;
         margin: 8px 0px 8px 0px;
         padding: 14px 35px 14px 35px;
+        border-radius: 50px;
         .dateAndDegrees{
             display: flex;
             flex-direction: column;
