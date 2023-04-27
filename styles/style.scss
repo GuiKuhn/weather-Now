@@ -31,6 +31,7 @@ body{
             display: flex;
             flex-direction: column;
             justify-content: center;
+            margin: 0px 0px 0px 12px;
             .maxMin{
                 display: flex;
                 flex-direction: row;
@@ -64,6 +65,7 @@ body{
         .rightRow{
             width: 157px;
             height: 157px;
+            margin: 0px 34px 0px 0px;
         }   
     }
     .weatherGadgets{
