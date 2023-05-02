@@ -46,7 +46,7 @@ fetch(url)
     .then(data=>{
         console.log(data);
         //mainDay
-        degree.innerHTML = parseInt(data.current_weather.temperature.toFixed(0) + "°");
+        degree.innerHTML = data.current_weather.temperature.toFixed(0) + "°";
         maxMain.innerHTML = parseInt(data.daily.temperature_2m_max[], 10);
         minMain.innerHTML = parseInt(data.daily.temperature_2m_min[], 10);
         mainIcon.innerHTML = data.daily.ICON;
