@@ -89,7 +89,11 @@ fetch(url)
         max4.innerHTML = parseInt(data.daily.temperature_2m_max[4], 10) + "°";
         min4.innerHTML = parseInt(data.daily.temperature_2m_min[4], 10) + "°";
         //rainDisplay4.innerHTML = data.daily.
-        rainChance4 = data.daily.precipitation_probability_max[4] +"%";
+        rainChance4.innerHTML = data.daily.precipitation_probability_max[4] +"%";
         iconDay4.src = changeIcon(data.daily.weathercode[4], 1);
+
+        console.log(data.daily.weathercode[4])
     })
     .catch(error=>console.log(error))
+
+    
