@@ -46,5 +46,31 @@ fetch(url)
     .then(data=>{
         console.log(data);
         degree.innerHTML = data.current_weather.temperature.toFixed(0) + "°";
+        minMain.innerHTML =
+        mainIcon.innerHTML =
+        humidity.innerHTML =
+        apparentTemperature.innerHTML =
+        windSpeed.innerHTML = 
+        precipitation.innerHTML =
+        date1.innerHTML = 
+        max1.innerHTML =
+        min1.innerHTML =
+        rainDisplay1.innerHTML =
+        rainChance1.innerHTML =
+        date2.innerHTML =
+        max2.innerHTML =
+        min2.innerHTML =
+        rainDisplay3.innerHTML =
+        rainChance2.innerHTML =
+        date3.innerHTML =
+        max3.innerHTML =
+        min3.innerHTML =
+        rainDisplay3.innerHTML =
+        rainChance3.innerHTML =
+        date4.innerHTML =
+        max4.innerHTML =
+        min4.innerHTML =
+        rainDisplay4.innerHTML =
+        rainChance4 =
     })
     .catch(error=>console.log(error))
