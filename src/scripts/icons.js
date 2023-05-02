@@ -48,7 +48,7 @@ function codeToIcon(weather, day) {
 
 //chamar essa funcao
 function changeIcon(weather, day){
-  const url = codeToBackground(weather, day);
+  const url = codeToIcon(weather, day);
   return url;
 
 }

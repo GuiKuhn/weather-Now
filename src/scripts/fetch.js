@@ -45,10 +45,12 @@ fetch(url)
     .then(response=>response.json())
     .then(data=>{
         console.log(data);
+        //mudança dinâmica do background
+        changeBackground(data.current_weather.weathercode);
         //mainDay
         degree.innerHTML = data.current_weather.temperature.toFixed(0) + "°";
-        maxMain.innerHTML = parseInt(data.daily.temperature_2m_max[0], 10);
-        minMain.innerHTML = parseInt(data.daily.temperature_2m_min[0], 10);
+        maxMain.innerHTML = parseInt(data.daily.temperature_2m_max[0], 10) + "°";
+        minMain.innerHTML = parseInt(data.daily.temperature_2m_min[0], 10) + "°";
         //mainIcon.innerHTML = data.daily.ICON;
         //gadget
         /*

@@ -9,9 +9,10 @@ body {
   justify-content: center;
   align-items: center;
   background-image: url("../images/Dia-ensolarado.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   width: 1920;
   height: 1080;
   transform: scale(0.67);
