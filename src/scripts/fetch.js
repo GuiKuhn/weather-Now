@@ -47,8 +47,8 @@ fetch(url)
         console.log(data);
         //mainDay
         degree.innerHTML = data.current_weather.temperature.toFixed(0) + "°";
-        maxMain.innerHTML = data.daily.temperature_2m_max[0];
-        minMain.innerHTML = data.daily.temperature_2m_min[0];
+        maxMain.innerHTML = parseInt(data.daily.temperature_2m_max[], 10);
+        minMain.innerHTML = parseInt(data.daily.temperature_2m_min[], 10);
         mainIcon.innerHTML = data.daily.ICON;
         //gadget
         humidity.innerHTML = data.hourly.relative_humidity[];
@@ -66,14 +66,14 @@ fetch(url)
         rainDisplay3.innerHTML = data.daily
         rainChance2.innerHTML = data.daily.precipitation_sum[2];
         //day3
-        max3.innerHTML = data.daily
-        min3.innerHTML = data.daily
-        rainDisplay3.innerHTML = data.daily
-        rainChance3.innerHTML = data.daily
+        max3.innerHTML = parseInt(data.daily.temperature_2m_max[3], 10);
+        min3.innerHTML = parseInt(data.daily.temperature_2m_min[3], 10);
+        rainDisplay3.innerHTML = data.daily.
+        rainChance3.innerHTML = data.daily.precipitation_sum[3];
         //day4
-        max4.innerHTML = data.daily
-        min4.innerHTML = data.daily
-        rainDisplay4.innerHTML = data.daily
-        rainChance4 = data.daily
+        max4.innerHTML = parseInt(data.dailytemperature_2m_max[3], 10);
+        min4.innerHTML = parseInt(data.daily.temperature_2m_min[3], 10);
+        rainDisplay4.innerHTML = data.daily.
+        rainChance4 = data.daily.precipitation_sum[3];
     })
     .catch(error=>console.log(error))
