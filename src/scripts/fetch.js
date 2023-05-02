@@ -53,8 +53,8 @@ fetch(url)
         //gadget
         humidity.innerHTML = data.hourly.relative_humidity[];
         apparentTemperature.innerHTML = data.hourly.apparent_temperature[];
-        windSpeed.innerHTML = data.daily.windspeed[]
-        precipitation.innerHTML = data.daily.precipitation_sum[]
+        windSpeed.innerHTML = data.daily.windspeed[];
+        precipitation.innerHTML = data.daily.precipitation_sum[];
         //day1
         max1.innerHTML = parseInt(data.daily.temperature_2m_max[1],10);
         min1.innerHTML = parseInt(data.daily.temperature_2m_min[1],10);
