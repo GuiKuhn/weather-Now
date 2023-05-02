@@ -47,9 +47,9 @@ fetch(url)
         console.log(data);
         //mainDay
         degree.innerHTML = data.current_weather.temperature.toFixed(0) + "°";
-        maxMain.innerHTML = parseInt(data.daily.temperature_2m_max[0], 10) + "°";
-        minMain.innerHTML = parseInt(data.daily.temperature_2m_min[0], 10) + "°";
-        //mainIcon.innerHTML = data.daily.ICON;
+        maxMain.innerHTML = parseInt(data.daily.temperature_2m_max[0], 10);
+        minMain.innerHTML = parseInt(data.daily.temperature_2m_min[0], 10);
+        mainIcon.innerHTML = data.daily.ICON;
         //gadget
         /*
         humidity.innerHTML = data.hourly.relative_humidity[0];
