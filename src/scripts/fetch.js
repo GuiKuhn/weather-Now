@@ -66,14 +66,14 @@ fetch(url)
         rainDisplay3.innerHTML = data.daily
         rainChance2.innerHTML = data.daily
         //day3
-        max3.innerHTML = data.daily
-        min3.innerHTML = data.daily
-        rainDisplay3.innerHTML = data.daily
-        rainChance3.innerHTML = data.daily
+        max3.innerHTML = data.daily.temperature_2m_max[];
+        min3.innerHTML = data.daily.temperature_2m_min[];
+        rainDisplay3.innerHTML = data.daily.
+        rainChance3.innerHTML = data.daily.precipitation_sum[];
         //day4
-        max4.innerHTML = data.daily
-        min4.innerHTML = data.daily
-        rainDisplay4.innerHTML = data.daily
-        rainChance4 = data.daily
+        max4.innerHTML = data.dailytemperature_2m_max[];
+        min4.innerHTML = data.daily.temperature_2m_min[];
+        rainDisplay4.innerHTML = data.daily.
+        rainChance4 = data.daily.precipitation_sum[];
     })
     .catch(error=>console.log(error))
