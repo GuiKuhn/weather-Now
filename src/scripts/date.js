@@ -65,6 +65,6 @@ function showDate(futureDate){
   document.getElementById("dateDay4").innerText = showDate(4);
   document.getElementById("dateDay4").textContent = showDate(4);
   document.getElementById("dateDay5").innerText = showDate(5);
-  document.getElementById("dateDay5").textContent = showDate(6);
+  document.getElementById("dateDay5").textContent = showDate(5);
 
   
