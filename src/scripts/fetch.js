@@ -56,25 +56,21 @@ fetch(url)
         windSpeed.innerHTML = data.daily.windspeed[]
         precipitation.innerHTML = data.daily.precipitation_sum[]
         //day1
-        date1.innerHTML = data.daily.adoadoado
         max1.innerHTML = data.daily
         min1.innerHTML = data.daily
         rainDisplay1.innerHTML = data.daily
         rainChance1.innerHTML = data.daily
         //day2
-        date2.innerHTML = data.daily
         max2.innerHTML = data.daily
         min2.innerHTML = data.daily
         rainDisplay3.innerHTML = data.daily
         rainChance2.innerHTML = data.daily
         //day3
-        date3.innerHTML = data.daily
         max3.innerHTML = data.daily
         min3.innerHTML = data.daily
         rainDisplay3.innerHTML = data.daily
         rainChance3.innerHTML = data.daily
         //day4
-        date4.innerHTML = data.daily
         max4.innerHTML = data.daily
         min4.innerHTML = data.daily
         rainDisplay4.innerHTML = data.daily
