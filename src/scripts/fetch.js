@@ -47,14 +47,14 @@ fetch(url)
         console.log(data);
         //mainDay
         degree.innerHTML = data.current_weather.temperature.toFixed(0) + "°";
-        maxMain.innerHTML = parseInt(data.daily.temperature_2m_max[], 10);
-        minMain.innerHTML = parseInt(data.daily.temperature_2m_min[], 10);
+        maxMain.innerHTML = parseInt(data.daily.temperature_2m_max[0], 10);
+        minMain.innerHTML = parseInt(data.daily.temperature_2m_min[0], 10);
         mainIcon.innerHTML = data.daily.ICON;
         //gadget
-        humidity.innerHTML = data.hourly.relative_humidity[];
-        apparentTemperature.innerHTML = data.hourly.apparent_temperature[];
-        windSpeed.innerHTML = data.daily.windspeed[];
-        precipitation.innerHTML = data.daily.precipitation_sum[];
+        humidity.innerHTML = data.hourly.relative_humidity[0];
+        apparentTemperature.innerHTML = data.hourly.apparent_temperature[0];
+        windSpeed.innerHTML = data.daily.windspeed[0];
+        precipitation.innerHTML = data.daily.precipitation_sum[0];
         //day1
         max1.innerHTML = parseInt(data.daily.temperature_2m_max[1],10);
         min1.innerHTML = parseInt(data.daily.temperature_2m_min[1],10);
