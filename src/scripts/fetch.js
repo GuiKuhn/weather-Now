@@ -49,31 +49,31 @@ fetch(url)
         degree.innerHTML = data.current_weather.temperature.toFixed(0) + "°";
         maxMain.innerHTML = parseInt(data.daily.temperature_2m_max[0], 10);
         minMain.innerHTML = parseInt(data.daily.temperature_2m_min[0], 10);
-        mainIcon.innerHTML = data.daily.ICON;
+        //mainIcon.innerHTML = data.daily.ICON;
         //gadget
-        humidity.innerHTML = data.hourly.relative_humidity[0];
-        apparentTemperature.innerHTML = data.hourly.apparent_temperature[0];
-        windSpeed.innerHTML = data.daily.windspeed[0];
-        precipitation.innerHTML = data.daily.precipitation_sum[0];
+        //humidity.innerHTML = data.hourly.relative_humidity[0];
+        //apparentTemperature.innerHTML = data.hourly.apparent_temperature[0];
+        //windSpeed.innerHTML = data.daily.windspeed[0];
+        //precipitation.innerHTML = data.daily.precipitation_sum[0];
         //day1
         max1.innerHTML = parseInt(data.daily.temperature_2m_max[1],10)  + "°";
         min1.innerHTML = parseInt(data.daily.temperature_2m_min[1],10)  + "°";
-        rainDisplay1.innerHTML = data.daily.
-        rainChance1.innerHTML = data.daily.precipitation_sum[1];
+        //rainDisplay1.innerHTML = data.daily.
+        rainChance1.innerHTML = (data.daily.rain_sum[1]*100) +"%";
         //day2
         max2.innerHTML = parseInt(data.daily.temperature_2m_max[2], 10) + "°";
         min2.innerHTML = parseInt(data.daily.temperature_2m_min[2], 10)  + "°";
-        rainDisplay3.innerHTML = data.daily
-        rainChance2.innerHTML = data.daily.precipitation_sum[2];
+        //rainDisplay3.innerHTML = data.daily
+        rainChance2.innerHTML = (data.daily.rain_sum[2]*100) +"%";
         //day3
         max3.innerHTML = parseInt(data.daily.temperature_2m_max[3], 10)  + "°";
         min3.innerHTML = parseInt(data.daily.temperature_2m_min[3], 10)  + "°";
-        rainDisplay3.innerHTML = data.daily.
-        rainChance3.innerHTML = data.daily.precipitation_sum[3];
+        //rainDisplay3.innerHTML = data.daily.
+        rainChance3.innerHTML = (data.daily.rain_sum[3]*100) +"%";
         //day4
-        max4.innerHTML = parseInt(data.dailytemperature_2m_max[3], 10)  + "°";
-        min4.innerHTML = parseInt(data.daily.temperature_2m_min[3], 10)  + "°";
-        rainDisplay4.innerHTML = data.daily.
-        rainChance4 = data.daily.precipitation_sum[3];
+        max4.innerHTML = parseInt(data.dailytemperature_2m_max[4], 10)  + "°";
+        min4.innerHTML = parseInt(data.daily.temperature_2m_min[4], 10)  + "°";
+        //rainDisplay4.innerHTML = data.daily.
+        rainChance4 = (data.daily.rain_sum[4]*100) +"%";
     })
     .catch(error=>console.log(error))
