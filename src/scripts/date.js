@@ -1,8 +1,8 @@
-function showDate(){
+function showDate(futureDate){
     var date = new Date();
-    var day = date.getDate();
+    var day = date.getDate() + futureDate;
     var month = date.getMonth();
-    var writtenDay = date.getDay();
+    var writtenDay = date.getDay() + futureDate;
   
     if(month === 0){
       month = 'Janeiro';
@@ -30,27 +30,41 @@ function showDate(){
       month = 'Dezembro';
     }
   
-    if(writtenDay === 0){
+    if(writtenDay === 0 || writtenDay === 7){
       writtenDay = 'Domingo';
-    }else if(writtenDay === 1){
+    }else if(writtenDay === 1 || writtenDay === 8){
       writtenDay = 'Segunda-feira'
-    }else if(writtenDay === 2){
+    }else if(writtenDay === 2 || writtenDay === 9){
       writtenDay = 'Terça-feira'
-    }else if(writtenDay === 3){
+    }else if(writtenDay === 3 || writtenDay === 10){
       writtenDay = 'Quarta-feira'
-    }else if(writtenDay === 4){
+    }else if(writtenDay === 4 || writtenDay === 11){
       writtenDay = 'Quinta-feira'
-    }else if(writtenDay === 5){
+    }else if(writtenDay === 5 || writtenDay === 12){
       writtenDay = 'Sexta-feira'
-    }else if(writtenDay === 6){
+    }else if(writtenDay === 6 || writtenDay === 13){
       writtenDay = 'Sábado'
     }
   
-    var wholeText = writtenDay + ', ' + day + ' de ' + month;
-  
-    document.getElementById("date").innerText = wholeText;
-    document.getElementById("date").textContent = wholeText;
+    var wholeText = writtenDay + ', ' + day  + ' de ' + month;
+
+    
+    return wholeText;
     
   }
 
   showDate();
+  document.getElementById("date").innerText = showDate(0);
+  document.getElementById("date").textContent = showDate(0);
+  document.getElementById("dateDay1").innerText = showDate(1);
+  document.getElementById("dateDay1").textContent = showDate(1);
+  document.getElementById("dateDay2").innerText = showDate(2);
+  document.getElementById("dateDay2").textContent = showDate(2);
+  document.getElementById("dateDay3").innerText = showDate(3);
+  document.getElementById("dateDay3").textContent = showDate(3);
+  document.getElementById("dateDay4").innerText = showDate(4);
+  document.getElementById("dateDay4").textContent = showDate(4);
+  document.getElementById("dateDay5").innerText = showDate(5);
+  document.getElementById("dateDay5").textContent = showDate(6);
+
+  
