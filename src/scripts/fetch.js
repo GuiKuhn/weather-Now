@@ -51,8 +51,8 @@ fetch(url)
         minMain.innerHTML = data.daily.temperature_2m_min([]);
         mainIcon.innerHTML = data.daily.ICON;
         //gadget
-        humidity.innerHTML = data.daily.relative_humidity[];
-        apparentTemperature.innerHTML = data.daily.apparent_temperature[];
+        humidity.innerHTML = data.hourly.relative_humidity[];
+        apparentTemperature.innerHTML = data.hourly.apparent_temperature[];
         windSpeed.innerHTML = data.daily.windspeed[]
         precipitation.innerHTML = data.daily.precipitation_sum[]
         //day1
