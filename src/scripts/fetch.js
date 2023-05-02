@@ -51,7 +51,8 @@ fetch(url)
         degree.innerHTML = data.current_weather.temperature.toFixed(0) + "°";
         maxMain.innerHTML = parseInt(data.daily.temperature_2m_max[0], 10) + "°";
         minMain.innerHTML = parseInt(data.daily.temperature_2m_min[0], 10) + "°";
-        //mainIcon.innerHTML = data.daily.ICON;
+        mainIcon.src = changeIcon(data.current_weather.weathercode, data.current_weather.is_day);
+
         //gadget
         /*
         humidity.innerHTML = data.hourly.relative_humidity[0];

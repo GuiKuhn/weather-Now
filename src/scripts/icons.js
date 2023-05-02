@@ -3,13 +3,13 @@
 function codeToIcon(weather, day) {
 
   if(weather === 0 || weather === 1 || weather === 2 && day === 0)
-    return "url('../images/icon-noite.jpg')";
+    return '../images/icon-noite.jpg';
   else if(weather === 0 || weather === 1 || weather === 2 && day === 1)
-    return "url('../images/icon-diasol.jpg')";
+    return '../images/icon-diasol.jpg';
   else if(weather === 3 || weather === 45 || weather === 48 && day === 0)
-    return "url('../images/icon-noite-nublada.jpg')";
+    return '../images/icon-noite-nublada.jpg';
   else if(weather === 3 || weather === 45 || weather === 48 && day === 1)
-  return "url('../images/icon-nublado.jpg')";
+  return '../images/icon-nublado.jpg';
 
   switch (weather) {
       
@@ -32,13 +32,13 @@ function codeToIcon(weather, day) {
       case 82:
       case 85:
       case 86:
-        return "url('../images/Dia-chuvoso.jpg')";
+        return '../images/icon-nublado.png';
         break;
 
       case 95:
       case 96:
       case 99:
-        return "url('../images/Dia-tempestade.jpg')";
+        return '../images/icon-nublado.png';
         break;
       default:
         console.log("Código inválido");
