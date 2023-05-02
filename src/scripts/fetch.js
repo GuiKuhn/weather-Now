@@ -47,7 +47,7 @@ fetch(url)
         console.log(data);
         //mainDay
         degree.innerHTML = data.current_weather.temperature.toFixed(0) + "°";
-        minMain.innerHTML =
+        minMain.innerHTML = data.daily.temperature_2m_min([]);
         mainIcon.innerHTML =
         //gadget
         humidity.innerHTML =
