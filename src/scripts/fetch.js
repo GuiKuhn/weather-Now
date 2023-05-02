@@ -56,28 +56,28 @@ fetch(url)
         windSpeed.innerHTML = data.daily.windspeed[]
         precipitation.innerHTML = data.daily.precipitation_sum[]
         //day1
-        date1.innerHTML = 
-        max1.innerHTML =
-        min1.innerHTML =
-        rainDisplay1.innerHTML =
-        rainChance1.innerHTML =
+        date1.innerHTML = data.daily
+        max1.innerHTML = data.daily
+        min1.innerHTML = data.daily
+        rainDisplay1.innerHTML = data.daily
+        rainChance1.innerHTML = data.daily
         //day2
-        date2.innerHTML =
-        max2.innerHTML =
-        min2.innerHTML =
-        rainDisplay3.innerHTML =
-        rainChance2.innerHTML =
+        date2.innerHTML = data.daily
+        max2.innerHTML = data.daily
+        min2.innerHTML = data.daily
+        rainDisplay3.innerHTML = data.daily
+        rainChance2.innerHTML = data.daily
         //day3
-        date3.innerHTML =
-        max3.innerHTML =
-        min3.innerHTML =
-        rainDisplay3.innerHTML =
-        rainChance3.innerHTML =
+        date3.innerHTML = data.daily
+        max3.innerHTML = data.daily
+        min3.innerHTML = data.daily
+        rainDisplay3.innerHTML = data.daily
+        rainChance3.innerHTML = data.daily
         //day4
-        date4.innerHTML =
-        max4.innerHTML =
-        min4.innerHTML =
-        rainDisplay4.innerHTML =
-        rainChance4 =
+        date4.innerHTML = data.daily
+        max4.innerHTML = data.daily
+        min4.innerHTML = data.daily
+        rainDisplay4.innerHTML = data.daily
+        rainChance4 = data.daily
     })
     .catch(error=>console.log(error))
