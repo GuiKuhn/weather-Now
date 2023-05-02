@@ -47,8 +47,8 @@ fetch(url)
         console.log(data);
         //mainDay
         degree.innerHTML = data.current_weather.temperature.toFixed(0) + "°";
-        maxMain.innerHTML = data.daily.temperature_2m_max([]);
-        minMain.innerHTML = data.daily.temperature_2m_min([]);
+        maxMain.innerHTML = data.daily.temperature_2m_max[0];
+        minMain.innerHTML = data.daily.temperature_2m_min[0];
         mainIcon.innerHTML = data.daily.ICON;
         //gadget
         humidity.innerHTML = data.hourly.relative_humidity[];
@@ -56,15 +56,15 @@ fetch(url)
         windSpeed.innerHTML = data.daily.windspeed[]
         precipitation.innerHTML = data.daily.precipitation_sum[]
         //day1
-        max1.innerHTML = data.daily
-        min1.innerHTML = data.daily
-        rainDisplay1.innerHTML = data.daily
-        rainChance1.innerHTML = data.daily
+        max1.innerHTML = parseInt(data.daily.temperature_2m_max[1],10);
+        min1.innerHTML = parseInt(data.daily.temperature_2m_min[1],10);
+        rainDisplay1.innerHTML = data.daily.
+        rainChance1.innerHTML = data.daily.precipitation_sum[1];
         //day2
-        max2.innerHTML = data.daily
-        min2.innerHTML = data.daily
+        max2.innerHTML = parseInt(data.daily.temperature_2m_max[2], 10);
+        min2.innerHTML = parseInt(data.daily.temperature_2m_min[2], 10);
         rainDisplay3.innerHTML = data.daily
-        rainChance2.innerHTML = data.daily
+        rainChance2.innerHTML = data.daily.precipitation_sum[2];
         //day3
         max3.innerHTML = data.daily
         min3.innerHTML = data.daily
