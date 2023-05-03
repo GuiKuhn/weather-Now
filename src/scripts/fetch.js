@@ -58,14 +58,12 @@ fetch(url)
         mainIcon.src = changeIcon(data.current_weather.weathercode, data.current_weather.is_day);
 
         //gadget
-        /*
-        const hourIndex = timeToIndex(data.current_weather.time);
-
-        humidity.innerHTML = data.hourly.relative_humidity[hourIndex];
-        apparentTemperature.innerHTML = data.hourly.apparent_temperature[hourIndex];
-        windSpeed.innerHTML = data.daily.windspeed[0];
+        const hourlyIndex = timeToIndex(data.current_weather.time);//horario atual em formato de index
+        humidity.innerHTML = data.hourly.relativehumidity_2m[hourlyIndex];
+        apparentTemperature.innerHTML = data.hourly.apparent_temperature[hourlyIndex];
+        windSpeed.innerHTML = data.current_weather.windspeed;
         precipitation.innerHTML = data.daily.precipitation_sum[0];
-        */
+        
         //day1
         max1.innerHTML = parseInt(data.daily.temperature_2m_max[1], 10) + "°";
         min1.innerHTML = parseInt(data.daily.temperature_2m_min[1], 10) + "°";
