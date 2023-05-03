@@ -107,10 +107,6 @@ body {
   transition: opacity 0.5s ease-in-out;
   z-index: 2;
 }
-.app .weatherGadgets .gadget1:hover, .app .weatherGadgets .gadget2:hover, .app .weatherGadgets .gadget3:hover, .app .weatherGadgets .gadget4:hover {
-  background-color: black;
-  color: white;
-}
 .app .weatherGadgets .gadget1:hover .gadgetIcon, .app .weatherGadgets .gadget2:hover .gadgetIcon, .app .weatherGadgets .gadget3:hover .gadgetIcon, .app .weatherGadgets .gadget4:hover .gadgetIcon {
   opacity: 0;
 }
