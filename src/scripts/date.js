@@ -29,6 +29,45 @@ function showDate(futureDate){
     }else if(month === 11){
       month = 'Dezembro';
     }
+
+    if(month === 0 && day === 32){
+      month++;
+      day = 0;
+    }else if(month === 1 && day === 29){
+      month++
+      day = 0;
+    }else if(month === 2 && day === 32){
+      month++
+      day = 0;
+    }else if(month === 3 && day === 31){
+      month++
+      day = 0;
+    }else if(month === 4 && day === 32){
+      month++
+      day = 0;
+    }else if(month === 5 && day === 31){
+      month++
+      day = 0;
+    }else if(month === 6 && day === 32){
+      month++
+      day = 0;
+    }else if(month === 7 && day === 32){
+      month++
+      day = 0;
+    }else if(month === 8 && day === 31){
+      month++
+      day = 0;
+    }else if(month === 9 && day === 32){
+      month++
+      day = 0;
+    }else if(month === 10 && day === 31){
+      month++
+      day = 0;
+    }else if(month === 11 && day === 32){
+      month++
+      day = 0;
+    }  
+      
   
     if(writtenDay === 0 || writtenDay === 7){
       writtenDay = 'Domingo';
