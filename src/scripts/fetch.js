@@ -50,7 +50,7 @@ fetch(url)
     .then(data=>{
         console.log(data);
         //mudança dinâmica do background
-        changeBackground(data.current_weather.weathercode);
+        changeBackground(data.current_weather.weathercode, data.current_weather.is_day);
         //mainDay
         degree.innerHTML = data.current_weather.temperature.toFixed(0) + "°";
         maxMain.innerHTML = parseInt(data.daily.temperature_2m_max[0], 10) + "°";
