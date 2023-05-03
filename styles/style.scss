@@ -9,6 +9,7 @@ $shadowColor: rgba(0,0,0,0.25);
 }
 body{
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     background-image: url("../images/Dia-ensolarado.jpg");
@@ -19,6 +20,31 @@ body{
     width: 1920;
     height: 1080;
     transform: scale(0.67);
+    .logo{
+        display: flex;
+        flex-direction: column;
+        position:absolute;
+        align-items: center;
+        align-content: center;
+        width: 360px;
+        height: 227px;
+        margin-top: -82px;
+        margin-left: -2300px;
+        background-color: $mainColor;
+        border-radius: 50%;
+        box-shadow: 0px 4px 4px 0px $shadowColor;
+        .logoImage{
+            width: 220px;
+            height: 220px;
+            margin-bottom: 0px;
+            margin-top: -15px;
+        }
+        .logoText{
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: -33px;
+        }
+    }
 }
 .app{
     display: flex;
@@ -80,10 +106,12 @@ body{
     }
     .weatherGadgets{
         display: flex;
+        width: 77%;
         flex-direction: row;
         justify-content: center;
         .gadget1,.gadget2,.gadget3,.gadget4{
             display: grid;
+            width: 25%;
             grid-template: 1fr / 1fr;
             place-items: center;
             margin: 15px 8px 23px 8px;

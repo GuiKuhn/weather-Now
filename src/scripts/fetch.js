@@ -61,8 +61,8 @@ fetch(url)
         const hourlyIndex = timeToIndex(data.current_weather.time);//horario atual em formato de index
         humidity.innerHTML = parseInt(data.hourly.relativehumidity_2m[hourlyIndex], 10) + "%";
         apparentTemperature.innerHTML = parseInt(data.hourly.apparent_temperature[hourlyIndex], 10) + "°";
-        windSpeed.innerHTML = parseInt(data.current_weather.windspeed, 10) + " km/h";
-        precipitation.innerHTML = parseInt(data.daily.precipitation_sum[0], 10) + " mm/h";
+        windSpeed.innerHTML = parseInt(data.current_weather.windspeed, 10) + "Km/h";
+        precipitation.innerHTML = parseInt(data.daily.precipitation_sum[0], 10) + "mm/h";
         
         //day1
         max1.innerHTML = parseInt(data.daily.temperature_2m_max[1], 10) + "°";
