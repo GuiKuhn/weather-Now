@@ -8,10 +8,10 @@ const minMain = document.getElementById("minMainDegree");
 const mainIcon = document.getElementById("mainWeatherIcon");
 
 //GADGETS
-const humidity = document.getElementById("gagdet1");
-const apparentTemperature = document.getElementById("gagdet2");
-const windSpeed = document.getElementById("gagdet3");
-const precipitation = document.getElementById("gagdet4");
+const humidity = document.getElementById("gText1");
+const apparentTemperature = document.getElementById("gText2");
+const windSpeed = document.getElementById("gText3");
+const precipitation = document.getElementById("gText4");
 
 //DAYCARD1
 const date1 = document.getElementById("dateDay1");
@@ -59,8 +59,10 @@ fetch(url)
 
         //gadget
         /*
-        humidity.innerHTML = data.hourly.relative_humidity[0];
-        apparentTemperature.innerHTML = data.hourly.apparent_temperature[0];
+        const hourIndex = timeToIndex(data.current_weather.time);
+
+        humidity.innerHTML = data.hourly.relative_humidity[hourIndex];
+        apparentTemperature.innerHTML = data.hourly.apparent_temperature[hourIndex];
         windSpeed.innerHTML = data.daily.windspeed[0];
         precipitation.innerHTML = data.daily.precipitation_sum[0];
         */
@@ -91,8 +93,6 @@ fetch(url)
         //rainDisplay4.innerHTML = data.daily.
         rainChance4.innerHTML = data.daily.precipitation_probability_max[4] +"%";
         iconDay4.src = changeIcon(data.daily.weathercode[4], 1);
-
-        console.log(data.daily.weathercode[4])
     })
     .catch(error=>console.log(error))
 

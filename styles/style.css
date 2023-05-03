@@ -83,15 +83,39 @@ body {
   justify-content: center;
 }
 .app .weatherGadgets .gadget1, .app .weatherGadgets .gadget2, .app .weatherGadgets .gadget3, .app .weatherGadgets .gadget4 {
+  display: grid;
+  grid-template: 1fr/1fr;
+  place-items: center;
   margin: 15px 8px 23px 8px;
   padding: 16px 40px 16px 40px;
   background-color: rgba(255, 255, 255, 0.6);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
 }
+.app .weatherGadgets .gadget1 *, .app .weatherGadgets .gadget2 *, .app .weatherGadgets .gadget3 *, .app .weatherGadgets .gadget4 * {
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
 .app .weatherGadgets .gadget1 .gadgetIcon, .app .weatherGadgets .gadget2 .gadgetIcon, .app .weatherGadgets .gadget3 .gadgetIcon, .app .weatherGadgets .gadget4 .gadgetIcon {
   width: 55px;
   height: auto;
+  z-index: 1;
+}
+.app .weatherGadgets .gadget1 .gadgetText, .app .weatherGadgets .gadget2 .gadgetText, .app .weatherGadgets .gadget3 .gadgetText, .app .weatherGadgets .gadget4 .gadgetText {
+  font-size: 24px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 2;
+}
+.app .weatherGadgets .gadget1:hover, .app .weatherGadgets .gadget2:hover, .app .weatherGadgets .gadget3:hover, .app .weatherGadgets .gadget4:hover {
+  background-color: black;
+  color: white;
+}
+.app .weatherGadgets .gadget1:hover .gadgetIcon, .app .weatherGadgets .gadget2:hover .gadgetIcon, .app .weatherGadgets .gadget3:hover .gadgetIcon, .app .weatherGadgets .gadget4:hover .gadgetIcon {
+  opacity: 0;
+}
+.app .weatherGadgets .gadget1:hover .gadgetText, .app .weatherGadgets .gadget2:hover .gadgetText, .app .weatherGadgets .gadget3:hover .gadgetText, .app .weatherGadgets .gadget4:hover .gadgetText {
+  opacity: 1;
 }
 .app .dayCard {
   display: flex;
