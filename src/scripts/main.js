@@ -1,5 +1,5 @@
 
-const city = "joanesburgo";
+const city = "mcmurdo station";
 //Nova York -1
 //Porto Alegre 0
 //Moscow +6
