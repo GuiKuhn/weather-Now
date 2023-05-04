@@ -1,4 +1,4 @@
-    
+let timeZone;
 const displayScreen = function(city){  
     //fetch da longitude e lat da cidade especificada    
     const url = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=0fbab384915d0e0e753f840b78cca4aa`
@@ -10,7 +10,27 @@ const displayScreen = function(city){
             .then(resp => resp.json())
             .then((result) => {
                 console.log(result)
-                showTime(result.results[0].timezone.offset_STD_seconds)
+                timeZone = result.results[0].timezone.offset_STD_seconds;
+                function showTime1(){
+                    var date = new Date();
+                    var h = parseInt(date.getHours(),10) + 3 + timeZone/3600; // 0 - 23
+                    var m = date.getMinutes(); // 0 - 59
+                    
+                    if(h >= 24)
+                      h = 0;
+                
+                    h = (h < 10) ? "0" + h : h;
+                    m = (m < 10) ? "0" + m : m;
+                  
+                    
+                    var time = h + ":" + m;
+                    document.getElementById("clock").innerText = time;
+                    document.getElementById("clock").textContent = time;
+                    
+                    setTimeout(showTime1, 10);//erro aqui
+                    
+                  }
+                  showTime1();
             });
 
     
@@ -109,3 +129,6 @@ const displayScreen = function(city){
             .catch(error=>console.log(error))
     })
             }
+function getTimeZone(){
+    return timeZone;
+}
