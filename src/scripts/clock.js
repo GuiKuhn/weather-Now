@@ -1,9 +1,11 @@
-function showTime(){
+function showTime(timeZone){
     var date = new Date();
-    var h = date.getHours(); // 0 - 23
+    var h = date.getHours() + 3 + timeZone; // 0 - 23
     var m = date.getMinutes(); // 0 - 59
     
-   
+    if(h >= 24)
+      h = 0;
+
     h = (h < 10) ? "0" + h : h;
     m = (m < 10) ? "0" + m : m;
   
@@ -15,4 +17,4 @@ function showTime(){
     setTimeout(showTime, 1000);
     
   }
-  showTime();
+  
