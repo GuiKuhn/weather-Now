@@ -6,6 +6,16 @@ const displayScreen = function(city){
     .then(response => response.json())
     .then(cityData => {
         console.log(cityData)
+        fetch(`https://api.geoapify.com/v1/geocode/reverse?lat=${lat}&lon=${lon}&format=json&apiKey=YOUR_API_KEY`)
+            .then(resp => resp.json())
+            .then((result) => {
+                if (result.length) {
+	                console.log(result[0].timezone.offset_STD_seconds);
+                } else {
+                    console.log("No location found");
+                }
+            });
+
     
         const url2 = `https://api.open-meteo.com/v1/forecast?latitude=${cityData[0].lat}&longitude=${cityData[0].lon}&hourly=temperature_2m,relativehumidity_2m,apparent_temperature,precipitation_probability,weathercode,windspeed_10m&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_sum,precipitation_probability_max&current_weather=true&timezone=America%2FSao_Paulo`;
         //MAINDAY
