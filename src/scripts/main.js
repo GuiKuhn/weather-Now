@@ -1,5 +1,12 @@
 
-const city = "mcmurdo station";
+
+const city = document.getElementById("city");
+displayScreen(city.value);
+city.addEventListener("keypress", function(e) {
+    if(e.key == 'Enter'){
+        displayScreen(city.value)
+    }
+});
 //Nova York -1
 //Porto Alegre 0
 //Moscow +6
@@ -13,4 +20,4 @@ const city = "mcmurdo station";
 //joanesburgo +5
 
 
-displayScreen(city);
+
