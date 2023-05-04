@@ -6,14 +6,11 @@ const displayScreen = function(city){
     .then(response => response.json())
     .then(cityData => {
         console.log(cityData)
-        fetch(`https://api.geoapify.com/v1/geocode/reverse?lat=${lat}&lon=${lon}&format=json&apiKey=YOUR_API_KEY`)
+        fetch(`https://api.geoapify.com/v1/geocode/reverse?lat=${cityData[0].lat}&lon=${cityData[0].lon}&format=json&apiKey=80f69a7843fc464298d8dba1e5ae3cb1`)
             .then(resp => resp.json())
             .then((result) => {
-                if (result.length) {
-	                console.log(result[0].timezone.offset_STD_seconds);
-                } else {
-                    console.log("No location found");
-                }
+                console.log(result)
+                showTime(result.results[0].timezone.offset_STD_seconds);
             });
 
     

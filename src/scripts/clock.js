@@ -1,6 +1,6 @@
 function showTime(timeZone){
     var date = new Date();
-    var h = date.getHours() + 3 + timeZone; // 0 - 23
+    var h = date.getHours() + 3 + parseInt(timeZone, 10)/3600; // 0 - 23
     var m = date.getMinutes(); // 0 - 59
     
     if(h >= 24)
