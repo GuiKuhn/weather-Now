@@ -159,7 +159,7 @@ body .logo .logoText {
 .app .dayCard .dateAndDegrees {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 .app .dayCard .dateAndDegrees .date {
   font-size: 20px;
