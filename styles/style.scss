@@ -165,11 +165,16 @@ body{
             align-items: center;
             .date{
                 font-size: 20px;
+                font-weight: bold;
             }
             .maxAndMin{
                 display: flex;
                 flex-direction: row;
-                font-size: 60px;
+                font-size: 75px;
+                .trace{
+                    margin-left: 18px;
+                    margin-right: 18px;
+                }
             }
         }
         .precipitationAndWIcon{
@@ -183,6 +188,7 @@ body{
                 align-items: center;
             .percent{
                 font-size: 20px;
+                font-weight: bolder;
             }
             .precipitationIcon{
                 width: 33px;

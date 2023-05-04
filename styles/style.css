@@ -163,11 +163,16 @@ body .logo .logoText {
 }
 .app .dayCard .dateAndDegrees .date {
   font-size: 20px;
+  font-weight: bold;
 }
 .app .dayCard .dateAndDegrees .maxAndMin {
   display: flex;
   flex-direction: row;
-  font-size: 60px;
+  font-size: 75px;
+}
+.app .dayCard .dateAndDegrees .maxAndMin .trace {
+  margin-left: 18px;
+  margin-right: 18px;
 }
 .app .dayCard .precipitationAndWIcon {
   display: flex;
@@ -182,6 +187,7 @@ body .logo .logoText {
 }
 .app .dayCard .precipitationAndWIcon .precipitation .percent {
   font-size: 20px;
+  font-weight: bolder;
 }
 .app .dayCard .precipitationAndWIcon .precipitation .precipitationIcon {
   width: 33px;
