@@ -10,7 +10,7 @@ const displayScreen = function(city){
             .then(resp => resp.json())
             .then((result) => {
                 console.log(result)
-                showTime(result.results[0].timezone.offset_STD_seconds);
+                showTime(result.results[0].timezone.offset_STD_seconds)
             });
 
     
