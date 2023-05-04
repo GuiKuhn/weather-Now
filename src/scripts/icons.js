@@ -2,17 +2,17 @@
 //não chamar essa função
 function codeToIcon(weather, day) {
 
-  if(weather === 0 || weather === 1 && day === 0)
+  if((weather === 0 || weather === 1) && day === 0)
     return '../images/icon-noite.png';
-  else if(weather === 0 || weather === 1 && day === 1)
+  else if((weather === 0 || weather === 1) && day === 1)
     return '../images/icon-diasol.png';
   else if (weather === 2 && day === 1)
     return '../images/icon-entre-nuvens.png'
   else if(weather === 2 && day === 0)
     return '../images/icon-noite-nublada.png'
-  else if(weather === 3 || weather === 45 || weather === 48 && day === 0)
+  else if((weather === 3 || weather === 45 || weather === 48) && day === 0)
     return '../images/icon-noite-nublada.png';
-  else if(weather === 3 || weather === 45 || weather === 48 && day === 1)
+  else if((weather === 3 || weather === 45 || weather === 48) && day === 1)
   return '../images/icon-nublado.png';
 
   switch (weather) {
