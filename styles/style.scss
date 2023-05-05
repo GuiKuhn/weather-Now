@@ -91,8 +91,18 @@ body{
             .diaMain{
                 font-size: 25px;
             }
-            .city{
-                font-size: 20px;
+            .city[type="text"]{
+            display: flex;
+            align-items: center;
+            border: none;
+            height: 25px;
+            width: 66%;
+            border-radius: 5px;
+            background-repeat: no-repeat;
+            background-color: $mainColor;
+            box-shadow: 0px 4px 4px 0px $shadowColor;
+            font-size: large;
+            text-align: center;
             }
             .hours{
                 font-size: 120px;

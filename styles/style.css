@@ -92,8 +92,18 @@ body .logo .logoText {
 .app .mainDay .middleRow .diaMain {
   font-size: 25px;
 }
-.app .mainDay .middleRow .city {
-  font-size: 20px;
+.app .mainDay .middleRow .city[type=text] {
+  display: flex;
+  align-items: center;
+  border: none;
+  height: 25px;
+  width: 66%;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-size: large;
+  text-align: center;
 }
 .app .mainDay .middleRow .hours {
   font-size: 120px;
