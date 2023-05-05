@@ -92,6 +92,10 @@ body .logo .logoText {
 .app .mainDay .middleRow .diaMain {
   font-size: 25px;
 }
+.app .mainDay .middleRow .MapIcon {
+  height: -12%;
+  width: -12%;
+}
 .app .mainDay .middleRow .city[type=text] {
   display: flex;
   align-items: center;
