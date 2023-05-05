@@ -91,7 +91,7 @@ body{
             .diaMain{
                 font-size: 25px;
             }
-                
+            /*    
             .city[type="text"]{
             display: flex;
             align-items: center;
@@ -104,6 +104,23 @@ body{
             box-shadow: 0px 4px 4px 0px $shadowColor;
             font-size: large;
             text-align: center;
+            }
+            */
+            .search{
+                display:flex;
+                flex-direction: row;
+                .mapIcon{
+                    
+                    .imageIcon{
+
+                    }
+                    .city{
+
+                    }
+                }
+                .location{
+
+                }
             }
             .hours{
                 font-size: 120px;
