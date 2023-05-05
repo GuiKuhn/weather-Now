@@ -110,6 +110,19 @@ body .logo .logoText {
 .app .mainDay .middleRow .search {
   display: flex;
   flex-direction: row;
+  position: relative;
+}
+.app .mainDay .middleRow .search .mapIcon {
+  position: absolute;
+}
+.app .mainDay .middleRow .search .mapIcon .imageIcon {
+  position: absolute;
+}
+.app .mainDay .middleRow .search .mapIcon .city {
+  position: absolute;
+}
+.app .mainDay .middleRow .search .location {
+  position: absolute;
 }
 .app .mainDay .middleRow .hours {
   font-size: 120px;

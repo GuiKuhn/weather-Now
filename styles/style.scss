@@ -109,17 +109,19 @@ body{
             .search{
                 display:flex;
                 flex-direction: row;
+                position: relative;
                 .mapIcon{
+                    position: absolute;
                     
                     .imageIcon{
-
+                        position: absolute;
                     }
                     .city{
-
+                        position: absolute;
                     }
                 }
                 .location{
-
+                    position: absolute;
                 }
             }
             .hours{
