@@ -43,15 +43,14 @@ body .logo .logoText {
   font-weight: bold;
   margin-top: -33px;
 }
-
-.app {
+body .app {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: -700px;
 }
-.app .mainDay {
+body .app .mainDay {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -64,28 +63,28 @@ body .logo .logoText {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   padding: 16px;
 }
-.app .mainDay .leftRow {
+body .app .mainDay .leftRow {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0px 0px 0px 12px;
 }
-.app .mainDay .leftRow .maxMin {
+body .app .mainDay .leftRow .maxMin {
   display: flex;
   flex-direction: row;
   justify-content: center;
   font-size: 25px;
 }
-.app .mainDay .leftRow .maxMin .maxMainDegree {
+body .app .mainDay .leftRow .maxMin .maxMainDegree {
   color: #C87C22;
 }
-.app .mainDay .leftRow .maxMin .minMainDegree {
+body .app .mainDay .leftRow .maxMin .minMainDegree {
   color: #004C6D;
 }
-.app .mainDay .leftRow .mainDegree {
+body .app .mainDay .leftRow .mainDegree {
   font-size: 100px;
 }
-.app .mainDay .middleRow {
+body .app .mainDay .middleRow {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -106,11 +105,11 @@ body .logo .logoText {
   }
   */
 }
-.app .mainDay .middleRow .diaMain {
+body .app .mainDay .middleRow .diaMain {
   font-size: 25px;
   height: 20%;
 }
-.app .mainDay .middleRow .search {
+body .app .mainDay .middleRow .search {
   display: flex;
   flex-direction: row;
   position: relative;
@@ -118,39 +117,48 @@ body .logo .logoText {
   width: 300px;
   height: 14%;
 }
-.app .mainDay .middleRow .search .iconButton {
-  position: absolute;
+body .app .mainDay .middleRow .search .iconButton {
   height: 100%;
   width: 15%;
 }
-.app .mainDay .middleRow .search .iconButton .imageIcon {
+body .app .mainDay .middleRow .search .iconButton .imageIcon {
   width: 100%;
   height: 100%;
 }
-.app .mainDay .middleRow .search .toDesistindo .city {
-  position: absolute;
+body .app .mainDay .middleRow .search .TextCity {
   height: 100%;
   width: 85%;
+  position: relative;
 }
-.app .mainDay .middleRow .search .toDesistindo .location {
+body .app .mainDay .middleRow .search .TextCity .city {
   position: absolute;
+  height: 100%;
+  width: 100%;
 }
-.app .mainDay .middleRow .hours {
+body .app .mainDay .middleRow .search .TextCity .adress {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  color: aqua;
+  height: 100%;
+}
+body .app .mainDay .hours {
   font-size: 120px;
   height: 66%;
 }
-.app .mainDay .rightRow {
+body .app .rightRow {
   width: 157px;
   height: 157px;
   margin: 0px 34px 0px 0px;
 }
-.app .weatherGadgets {
+body .weatherGadgets {
   display: flex;
   width: 77%;
   flex-direction: row;
   justify-content: center;
 }
-.app .weatherGadgets .gadget1, .app .weatherGadgets .gadget2, .app .weatherGadgets .gadget3, .app .weatherGadgets .gadget4 {
+body .weatherGadgets .gadget1, body .weatherGadgets .gadget2, body .weatherGadgets .gadget3, body .weatherGadgets .gadget4 {
   display: grid;
   width: 25%;
   grid-template: 1fr/1fr;
@@ -161,30 +169,30 @@ body .logo .logoText {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
 }
-.app .weatherGadgets .gadget1 *, .app .weatherGadgets .gadget2 *, .app .weatherGadgets .gadget3 *, .app .weatherGadgets .gadget4 * {
+body .weatherGadgets .gadget1 *, body .weatherGadgets .gadget2 *, body .weatherGadgets .gadget3 *, body .weatherGadgets .gadget4 * {
   grid-column: 1/1;
   grid-row: 1/1;
 }
-.app .weatherGadgets .gadget1 .gadgetIcon, .app .weatherGadgets .gadget2 .gadgetIcon, .app .weatherGadgets .gadget3 .gadgetIcon, .app .weatherGadgets .gadget4 .gadgetIcon {
+body .weatherGadgets .gadget1 .gadgetIcon, body .weatherGadgets .gadget2 .gadgetIcon, body .weatherGadgets .gadget3 .gadgetIcon, body .weatherGadgets .gadget4 .gadgetIcon {
   width: 55px;
   height: auto;
   transition: opacity 0.4s ease-in-out;
   z-index: 1;
 }
-.app .weatherGadgets .gadget1 .gadgetText, .app .weatherGadgets .gadget2 .gadgetText, .app .weatherGadgets .gadget3 .gadgetText, .app .weatherGadgets .gadget4 .gadgetText {
+body .weatherGadgets .gadget1 .gadgetText, body .weatherGadgets .gadget2 .gadgetText, body .weatherGadgets .gadget3 .gadgetText, body .weatherGadgets .gadget4 .gadgetText {
   font-size: 24px;
   font-weight: bold;
   opacity: 0;
   transition: opacity 0.2s ease-in;
   z-index: 2;
 }
-.app .weatherGadgets .gadget1:hover .gadgetIcon, .app .weatherGadgets .gadget2:hover .gadgetIcon, .app .weatherGadgets .gadget3:hover .gadgetIcon, .app .weatherGadgets .gadget4:hover .gadgetIcon {
+body .weatherGadgets .gadget1:hover .gadgetIcon, body .weatherGadgets .gadget2:hover .gadgetIcon, body .weatherGadgets .gadget3:hover .gadgetIcon, body .weatherGadgets .gadget4:hover .gadgetIcon {
   opacity: 0;
 }
-.app .weatherGadgets .gadget1:hover .gadgetText, .app .weatherGadgets .gadget2:hover .gadgetText, .app .weatherGadgets .gadget3:hover .gadgetText, .app .weatherGadgets .gadget4:hover .gadgetText {
+body .weatherGadgets .gadget1:hover .gadgetText, body .weatherGadgets .gadget2:hover .gadgetText, body .weatherGadgets .gadget3:hover .gadgetText, body .weatherGadgets .gadget4:hover .gadgetText {
   opacity: 1;
 }
-.app .dayCard {
+body .dayCard {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -197,44 +205,44 @@ body .logo .logoText {
   padding: 14px 35px 14px 35px;
   border-radius: 50px;
 }
-.app .dayCard .dateAndDegrees {
+body .dayCard .dateAndDegrees {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.app .dayCard .dateAndDegrees .date {
+body .dayCard .dateAndDegrees .date {
   font-size: 20px;
   font-weight: bold;
 }
-.app .dayCard .dateAndDegrees .maxAndMin {
+body .dayCard .dateAndDegrees .maxAndMin {
   display: flex;
   flex-direction: row;
   font-size: 75px;
 }
-.app .dayCard .dateAndDegrees .maxAndMin .trace {
+body .dayCard .dateAndDegrees .maxAndMin .trace {
   margin-left: 18px;
   margin-right: 18px;
 }
-.app .dayCard .precipitationAndWIcon {
+body .dayCard .precipitationAndWIcon {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.app .dayCard .precipitationAndWIcon .precipitation {
+body .dayCard .precipitationAndWIcon .precipitation {
   display: flex;
   margin-right: 20px;
   flex-direction: column;
   align-items: center;
 }
-.app .dayCard .precipitationAndWIcon .precipitation .percent {
+body .dayCard .precipitationAndWIcon .precipitation .percent {
   font-size: 20px;
   font-weight: bolder;
 }
-.app .dayCard .precipitationAndWIcon .precipitation .precipitationIcon {
+body .dayCard .precipitationAndWIcon .precipitation .precipitationIcon {
   width: 33px;
   height: auto;
 }
-.app .dayCard .precipitationAndWIcon .weatherIcon {
+body .dayCard .precipitationAndWIcon .weatherIcon {
   width: 87px;
   height: auto;
   flex: 1;
