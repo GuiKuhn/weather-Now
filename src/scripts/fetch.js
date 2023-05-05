@@ -15,33 +15,35 @@ const displayScreen = function(city){
                     var date = new Date();
                     var h = parseInt(date.getHours(),10) + 3 + timeZone/3600; // 0 - 23
                     var m = date.getMinutes(); // 0 - 59
-                    var hNew = h;
+                    var x = 0;
                     
-                    if(h >= 24)
+                    if(h >= 24){
                       h = h - 24;
-                
+                      x++;
+                    }   
+                    if(h < 0){
+                      h = 24 + h;
+                      x--;
+                    }
                     h = (h < 10) ? "0" + h : h;
                     m = (m < 10) ? "0" + m : m;
-
-                    if(hNew >= 24){
-                        document.getElementById("date").innerText = showDate(1);
-                        document.getElementById("date").textContent = showDate(1);
-                        document.getElementById("dateDay1").innerText = showDate(2);
-                        document.getElementById("dateDay1").textContent = showDate(2);
-                        document.getElementById("dateDay2").innerText = showDate(3);
-                        document.getElementById("dateDay2").textContent = showDate(3);
-                        document.getElementById("dateDay3").innerText = showDate(4);
-                        document.getElementById("dateDay3").textContent = showDate(4);
-                        document.getElementById("dateDay4").innerText = showDate(5);
-                        document.getElementById("dateDay4").textContent = showDate(5);
-                    }
-                  
                     
                     var time = h + ":" + m;
                     document.getElementById("clock").innerText = time;
                     document.getElementById("clock").textContent = time;
                     
                     setTimeout(showTime, 1000);//erro aqui
+
+                        document.getElementById("date").innerText = showDate(x);
+                        document.getElementById("date").textContent = showDate(x);
+                        document.getElementById("dateDay1").innerText = showDate(x + 1);
+                        document.getElementById("dateDay1").textContent = showDate(x + 1);
+                        document.getElementById("dateDay2").innerText = showDate(x + 2);
+                        document.getElementById("dateDay2").textContent = showDate(x + 2);
+                        document.getElementById("dateDay3").innerText = showDate(x + 3);
+                        document.getElementById("dateDay3").textContent = showDate(x + 3);
+                        document.getElementById("dateDay4").innerText = showDate(x + 4);
+                        document.getElementById("dateDay4").textContent = showDate(x + 4);
                     
                   }
                   showTime();
