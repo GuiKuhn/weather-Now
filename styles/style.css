@@ -89,21 +89,6 @@ body .app .mainDay .middleRow {
   flex-direction: column;
   align-items: center;
   height: 100%;
-  /*    
-  .city[type="text"]{
-  display: flex;
-  align-items: center;
-  border: none;
-  height: 25px;
-  width: 66%;
-  border-radius: 5px;
-  background-repeat: no-repeat;
-  background-color: $mainColor;
-  box-shadow: 0px 4px 4px 0px $shadowColor;
-  font-size: large;
-  text-align: center;
-  }
-  */
 }
 body .app .mainDay .middleRow .diaMain {
   font-size: 25px;
@@ -163,13 +148,13 @@ body .app .rightRow {
   height: 157px;
   margin: 0px 34px 0px 0px;
 }
-body .weatherGadgets {
+body .app .weatherGadgets {
   display: flex;
   width: 77%;
   flex-direction: row;
   justify-content: center;
 }
-body .weatherGadgets .gadget1, body .weatherGadgets .gadget2, body .weatherGadgets .gadget3, body .weatherGadgets .gadget4 {
+body .app .weatherGadgets .gadget1, body .app .weatherGadgets .gadget2, body .app .weatherGadgets .gadget3, body .app .weatherGadgets .gadget4 {
   display: grid;
   width: 25%;
   grid-template: 1fr/1fr;
@@ -180,30 +165,30 @@ body .weatherGadgets .gadget1, body .weatherGadgets .gadget2, body .weatherGadge
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
 }
-body .weatherGadgets .gadget1 *, body .weatherGadgets .gadget2 *, body .weatherGadgets .gadget3 *, body .weatherGadgets .gadget4 * {
+body .app .weatherGadgets .gadget1 *, body .app .weatherGadgets .gadget2 *, body .app .weatherGadgets .gadget3 *, body .app .weatherGadgets .gadget4 * {
   grid-column: 1/1;
   grid-row: 1/1;
 }
-body .weatherGadgets .gadget1 .gadgetIcon, body .weatherGadgets .gadget2 .gadgetIcon, body .weatherGadgets .gadget3 .gadgetIcon, body .weatherGadgets .gadget4 .gadgetIcon {
+body .app .weatherGadgets .gadget1 .gadgetIcon, body .app .weatherGadgets .gadget2 .gadgetIcon, body .app .weatherGadgets .gadget3 .gadgetIcon, body .app .weatherGadgets .gadget4 .gadgetIcon {
   width: 55px;
   height: auto;
   transition: opacity 0.4s ease-in-out;
   z-index: 1;
 }
-body .weatherGadgets .gadget1 .gadgetText, body .weatherGadgets .gadget2 .gadgetText, body .weatherGadgets .gadget3 .gadgetText, body .weatherGadgets .gadget4 .gadgetText {
+body .app .weatherGadgets .gadget1 .gadgetText, body .app .weatherGadgets .gadget2 .gadgetText, body .app .weatherGadgets .gadget3 .gadgetText, body .app .weatherGadgets .gadget4 .gadgetText {
   font-size: 24px;
   font-weight: bold;
   opacity: 0;
   transition: opacity 0.2s ease-in;
   z-index: 2;
 }
-body .weatherGadgets .gadget1:hover .gadgetIcon, body .weatherGadgets .gadget2:hover .gadgetIcon, body .weatherGadgets .gadget3:hover .gadgetIcon, body .weatherGadgets .gadget4:hover .gadgetIcon {
+body .app .weatherGadgets .gadget1:hover .gadgetIcon, body .app .weatherGadgets .gadget2:hover .gadgetIcon, body .app .weatherGadgets .gadget3:hover .gadgetIcon, body .app .weatherGadgets .gadget4:hover .gadgetIcon {
   opacity: 0;
 }
-body .weatherGadgets .gadget1:hover .gadgetText, body .weatherGadgets .gadget2:hover .gadgetText, body .weatherGadgets .gadget3:hover .gadgetText, body .weatherGadgets .gadget4:hover .gadgetText {
+body .app .weatherGadgets .gadget1:hover .gadgetText, body .app .weatherGadgets .gadget2:hover .gadgetText, body .app .weatherGadgets .gadget3:hover .gadgetText, body .app .weatherGadgets .gadget4:hover .gadgetText {
   opacity: 1;
 }
-body .dayCard {
+body .app .dayCard {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -216,44 +201,44 @@ body .dayCard {
   padding: 14px 35px 14px 35px;
   border-radius: 50px;
 }
-body .dayCard .dateAndDegrees {
+body .app .dayCard .dateAndDegrees {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-body .dayCard .dateAndDegrees .date {
+body .app .dayCard .dateAndDegrees .date {
   font-size: 20px;
   font-weight: bold;
 }
-body .dayCard .dateAndDegrees .maxAndMin {
+body .app .dayCard .dateAndDegrees .maxAndMin {
   display: flex;
   flex-direction: row;
   font-size: 75px;
 }
-body .dayCard .dateAndDegrees .maxAndMin .trace {
+body .app .dayCard .dateAndDegrees .maxAndMin .trace {
   margin-left: 18px;
   margin-right: 18px;
 }
-body .dayCard .precipitationAndWIcon {
+body .app .dayCard .precipitationAndWIcon {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-body .dayCard .precipitationAndWIcon .precipitation {
+body .app .dayCard .precipitationAndWIcon .precipitation {
   display: flex;
   margin-right: 20px;
   flex-direction: column;
   align-items: center;
 }
-body .dayCard .precipitationAndWIcon .precipitation .percent {
+body .app .dayCard .precipitationAndWIcon .precipitation .percent {
   font-size: 20px;
   font-weight: bolder;
 }
-body .dayCard .precipitationAndWIcon .precipitation .precipitationIcon {
+body .app .dayCard .precipitationAndWIcon .precipitation .precipitationIcon {
   width: 33px;
   height: auto;
 }
-body .dayCard .precipitationAndWIcon .weatherIcon {
+body .app .dayCard .precipitationAndWIcon .weatherIcon {
   width: 87px;
   height: auto;
   flex: 1;

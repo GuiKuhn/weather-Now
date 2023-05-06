@@ -46,228 +46,211 @@ body{
         }
     }
 
-.app{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: -700px;
-    .mainDay{
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        background-color: $mainColor;
-        width: 940px;
-        height: 227px;
-        margin: 0px 0px 16px 0px;
-        border-radius: 20px;
-        box-shadow: 0px 4px 4px 0px $shadowColor;
-        padding: 16px;
-        .leftRow{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin: 0px 0px 0px 12px;
-            .maxMin{
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                font-size: 25px;
-                .maxMainDegree{
-                    color: #C87C22;
-                }
-                .minMainDegree{
-                    color: #004C6D;
-                }
-            }
-            .mainDegree{
-                font-size: 100px;
-            }
-        }
-        .middleRow{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 100%;
-            .diaMain{
-                font-size: 25px;
-                height: 20%;
-            }
-            /*    
-            .city[type="text"]{
-            display: flex;
-            align-items: center;
-            border: none;
-            height: 25px;
-            width: 66%;
-            border-radius: 5px;
-            background-repeat: no-repeat;
-            background-color: $mainColor;
-            box-shadow: 0px 4px 4px 0px $shadowColor;
-            font-size: large;
-            text-align: center;
-            }
-            */
-            .search{
-                display:flex;
-                flex-direction: row;
-                position: relative;
-                background-color: black;
-                width: 110%;
-                height: 25%;
-                border-radius: 30px 30px 30px 30px;
-                    .iconButton{
-                        height: 100%;
-                        width: 15%;
-                        display: flex;
-                        flex-direction: row; 
-                        align-items: center;
-                        align-content: center;
-                        justify-content: center;
-                        padding-left: 10px;
-                        .imageIcon{
-                            width: 50%;
-                            height: 70%;
-                        }
-                    }
-                    .TextCity{
-                        height: 100%;
-                        width: 85%;
-                        position: relative;
-                        .city{
-                            position: absolute;
-                            height: 90%;
-                            width: 100%;
-                            border-radius: 0px 30px 30px 0px;
-                            font-size: 20px;
-                        }
-                        .adress{
-                            font-size: 20px;
-                            position: absolute;
-                            align-items: center;
-                            margin-left: 10%;
-                            display: flex;
-                            flex-direction: row;
-                            width: 100%;
-                            height: 100%;
-                        }
-                        
-                    
-                    }
-                }     
-                
-            }
-            .hours{
-                font-size: 120px;
-                height: 66%;
-            }
-        } //mainDay
-        .rightRow{
-            width: 157px;
-            height: 157px;
-            margin: 0px 34px 0px 0px;
-        } 
-          
-    } //app
-    .weatherGadgets{
+    .app{
         display: flex;
-        width: 77%;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
-        .gadget1,.gadget2,.gadget3,.gadget4{
-            display: grid;
-            width: 25%;
-            grid-template: 1fr / 1fr;
-            place-items: center;
-            margin: 15px 8px 23px 8px;
-            padding: 16px 40px 16px 40px;
-            background-color: $mainColor;
-            box-shadow: 0px 4px 4px $shadowColor;
-            border-radius: 50px;
-            *{
-                grid-column: 1/1;
-                grid-row: 1/1;  
-            }
-            .gadgetIcon{
-                width: 55px;
-                height: auto;
-                transition: opacity 0.4s ease-in-out;
-                z-index: 1;  
-            }
-            .gadgetText{
-                font-size: 24px;
-                font-weight: bold;
-                opacity: 0;
-                transition: opacity 0.2s ease-in;
-                
-                z-index: 2;
-            }
-        &:hover{
-            .gadgetIcon{
-                opacity: 0;
-            }
-            .gadgetText{
-                opacity: 1;
-            }
-        }
-        }
-    }
-    .dayCard{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
         align-items: center;
-        background-color: $mainColor;
-        box-shadow: 0px 4px 4px $shadowColor;
-        width: 669px;
-        height: 115px;
-        margin: 8px 0px 8px 0px;
-        padding: 14px 35px 14px 35px;
-        border-radius: 50px;
-        .dateAndDegrees{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            .date{
-                font-size: 20px;
-                font-weight: bold;
-            }
-            .maxAndMin{
+        margin-bottom: -700px;
+        .mainDay{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $mainColor;
+            width: 940px;
+            height: 227px;
+            margin: 0px 0px 16px 0px;
+            border-radius: 20px;
+            box-shadow: 0px 4px 4px 0px $shadowColor;
+            padding: 16px;
+            .leftRow{
                 display: flex;
-                flex-direction: row;
-                font-size: 75px;
-                .trace{
-                    margin-left: 18px;
-                    margin-right: 18px;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0px 0px 0px 12px;
+                .maxMin{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    font-size: 25px;
+                    .maxMainDegree{
+                        color: #C87C22;
+                    }
+                    .minMainDegree{
+                        color: #004C6D;
+                    }
+                }
+                .mainDegree{
+                    font-size: 100px;
                 }
             }
-        }
-        .precipitationAndWIcon{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            .precipitation{
+            .middleRow{
                 display: flex;
-                margin-right: 20px;
                 flex-direction: column;
                 align-items: center;
-            .percent{
-                font-size: 20px;
-                font-weight: bolder;
+                height: 100%;
+                .diaMain{
+                    font-size: 25px;
+                    height: 20%;
+                }
+                .search{
+                    display:flex;
+                    flex-direction: row;
+                    position: relative;
+                    background-color: black;
+                    width: 110%;
+                    height: 25%;
+                    border-radius: 30px 30px 30px 30px;
+                        .iconButton{
+                            height: 100%;
+                            width: 15%;
+                            display: flex;
+                            flex-direction: row; 
+                            align-items: center;
+                            align-content: center;
+                            justify-content: center;
+                            padding-left: 10px;
+                            .imageIcon{
+                                width: 50%;
+                                height: 70%;
+                            }
+                        }
+                        .TextCity{
+                            height: 100%;
+                            width: 85%;
+                            position: relative;
+                            .city{
+                                position: absolute;
+                                height: 90%;
+                                width: 100%;
+                                border-radius: 0px 30px 30px 0px;
+                                font-size: 20px;
+                            }
+                            .adress{
+                                font-size: 20px;
+                                position: absolute;
+                                align-items: center;
+                                margin-left: 10%;
+                                display: flex;
+                                flex-direction: row;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        
+                        }
+                    }                    
+                }
+                .hours{
+                    font-size: 120px;
+                    height: 66%;
+                }
+            } 
+            .rightRow{
+                width: 157px;
+                height: 157px;
+                margin: 0px 34px 0px 0px;
+            } 
+            
+         
+        .weatherGadgets{
+            display: flex;
+            width: 77%;
+            flex-direction: row;
+            justify-content: center;
+            .gadget1,.gadget2,.gadget3,.gadget4{
+                display: grid;
+                width: 25%;
+                grid-template: 1fr / 1fr;
+                place-items: center;
+                margin: 15px 8px 23px 8px;
+                padding: 16px 40px 16px 40px;
+                background-color: $mainColor;
+                box-shadow: 0px 4px 4px $shadowColor;
+                border-radius: 50px;
+                *{
+                    grid-column: 1/1;
+                    grid-row: 1/1;  
+                }
+                .gadgetIcon{
+                    width: 55px;
+                    height: auto;
+                    transition: opacity 0.4s ease-in-out;
+                    z-index: 1;  
+                }
+                .gadgetText{
+                    font-size: 24px;
+                    font-weight: bold;
+                    opacity: 0;
+                    transition: opacity 0.2s ease-in;               
+                    z-index: 2;
+                }
+                &:hover{
+                    .gadgetIcon{
+                        opacity: 0;
+                    }
+                    .gadgetText{
+                        opacity: 1;
+                    }
+                }
             }
-            .precipitationIcon{
-                width: 33px;
-                height: auto;
+        }
+        .dayCard{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $mainColor;
+            box-shadow: 0px 4px 4px $shadowColor;
+            width: 669px;
+            height: 115px;
+            margin: 8px 0px 8px 0px;
+            padding: 14px 35px 14px 35px;
+            border-radius: 50px;
+            .dateAndDegrees{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                .date{
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                .maxAndMin{
+                    display: flex;
+                    flex-direction: row;
+                    font-size: 75px;
+                    .trace{
+                        margin-left: 18px;
+                        margin-right: 18px;
+                    }
+                }
             }
+            .precipitationAndWIcon{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .precipitation{
+                    display: flex;
+                    margin-right: 20px;
+                    flex-direction: column;
+                    align-items: center;
+                    .percent{
+                        font-size: 20px;
+                        font-weight: bolder;
+                    }
+                    .precipitationIcon{
+                        width: 33px;
+                        height: auto;
+                    }
+                }
+                .weatherIcon{
+                    width: 87px;
+                    height: auto;
+                    flex: 1;
+                }
+            }        
         }
-        .weatherIcon{
-            width: 87px;
-            height: auto;
-            flex: 1;
-        }
-        }
-        
     }
 }
+
 
