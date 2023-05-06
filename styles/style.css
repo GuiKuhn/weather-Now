@@ -111,12 +111,12 @@ body .app .mainDay .middleRow .search .iconButton {
   align-content: center;
   justify-content: center;
   padding-left: 10px;
-  background-color: black;
+  border-width: 2px;
   border-radius: 30px 30px 30px 30px;
 }
 body .app .mainDay .middleRow .search .iconButton .imageIcon {
-  width: 50%;
-  height: 70%;
+  width: 60%;
+  height: 65%;
 }
 body .app .mainDay .middleRow .search .TextCity {
   height: 100%;
@@ -142,13 +142,18 @@ body .app .mainDay .middleRow .search .TextCity .adress {
   flex-direction: row;
   width: 100%;
   height: 100%;
+  opacity: 1;
   z-index: 1;
 }
 body .app .mainDay .middleRow .search:hover .city {
   width: 100%;
+  border: 10px;
 }
 body .app .mainDay .middleRow .search:hover .iconButton {
   border-radius: 30px 0px 0px 30px;
+}
+body .app .mainDay .middleRow .search:hover .adress {
+  opacity: 0;
 }
 body .app .mainDay .hours {
   font-size: 120px;
