@@ -5,9 +5,13 @@ const displayScreen = function(city){
     fetch(url)
     .then(response => response.json())
     .then(cityData => {
-        document.getElementById("cName").innerHTML = cityData[0].name + ", ";
-        document.getElementById("cCountry").innerHTML = cityData[0].country;
-
+        document.getElementById("cName").innerHTML = cityData[0].name;
+        if(cityData[0].country != ""){
+            document.getElementById("cCountry").innerHTML = ", " + cityData[0].country;
+        }
+        else{
+            document.getElementById("cCountry").innerHTML = ""
+        }
         console.log(cityData)
         fetch(`https://api.geoapify.com/v1/geocode/reverse?lat=${cityData[0].lat}&lon=${cityData[0].lon}&format=json&apiKey=80f69a7843fc464298d8dba1e5ae3cb1`)
             .then(resp => resp.json())
